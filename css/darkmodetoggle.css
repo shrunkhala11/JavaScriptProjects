@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+    border: 2px solid red;
+    text-align: center;
+    padding:10%;
+    transition: background 0.3s linear, 
+    color 0.3s linear;
+}
+body.dark{
+    background-color: rgb(30, 29, 29);
+    color:aliceblue;
+}
+label{
+    background-color: blueviolet;
+    border-radius:50%;
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    cursor:pointer;
+    user-select: none;
+    transition: background 0.3s linear;
+}
+
+.toggle-container{
+position: fixed;
+top:10px;
+right:10px
+}
+body.dark label{
+    background-color: aliceblue;
+    color: aliceblue;
+}
+input{
+    visibility: hidden;
+}

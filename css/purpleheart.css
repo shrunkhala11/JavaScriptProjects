@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+.heart{
+    position: fixed;
+    top:-1vh;
+    transform: translateY(0);
+    animation: fall 3s linear;
+}
+@keyframes  fall{
+    to{
+        transform: translateY(105vh);
+    }
+}
